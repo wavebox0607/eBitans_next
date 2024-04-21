@@ -15,6 +15,7 @@ export const metadata = {
   },
 };
 
+// hello world
 const Home = async ({ params: { locale } }) => {
   return (
     <main className="">

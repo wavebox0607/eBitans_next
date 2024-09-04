@@ -1,7 +1,7 @@
+import { fetchBlogData, fetchBlogDetailsData } from "@/helper/api";
 import moment from "moment";
 import Image from "next/image";
 import Link from "next/link";
-import { fetchBlogData, fetchBlogDetailsData } from "@/helper/api";
 
 export async function generateMetadata({ params }) {
   const { details } = (await fetchBlogDetailsData(params)) ?? [];
